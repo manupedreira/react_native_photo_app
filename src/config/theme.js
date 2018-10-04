@@ -27,7 +27,7 @@ export const Spacing = {
 };
 
 export const TextSize = {
-  H1: 36,
+  H1: 42,
   H2: 24,
   H3: 18,
   H4: 16,
@@ -131,7 +131,6 @@ export const themeStyles = StyleSheet.create({
   },
   detailTitle: {
     marginBottom: 10,
-    fontFamily: Font.MUSEO_BOLD,
     color: Color.WHITE,
     fontSize: TextSize.H1
   },

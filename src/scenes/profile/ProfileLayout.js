@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
   profileContainers: {
     flexDirection: "row",
     justifyContent: "flex-start",
-    marginBottom: 40,
+    marginBottom: 30,
     paddingLeft: Spacing.padding,
     paddingRight: Spacing.padding
   },
@@ -44,6 +44,10 @@ const styles = StyleSheet.create({
     color: Color.BLACK,
     fontFamily: Font.MUSEO_EXTRA_LIGHT,
     fontSize: TextSize.H6
+  },
+  myPhotos: {
+    fontFamily: Font.MUSEO_EXTRA_BOLD,
+    fontSize: TextSize.H1
   }
 });
 
@@ -98,6 +102,9 @@ class ProfileLayout extends React.Component {
           </TouchableOpacity>
         </View>
         {this.renderUser()}
+        <View style={styles.profileContainers}>
+          <CustomText style={styles.myPhotos}>My Photos</CustomText>
+        </View>
         <List>{user.photos}</List>
       </View>
     );
